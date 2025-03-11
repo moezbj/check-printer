@@ -20,6 +20,11 @@ export default defineConfig((env) => {
     },
     plugins: [react(), pluginExposeRenderer(name)],
     publicDir: "public",
+    server: {
+      watch: {
+        usePolling: true, // Useful for some file systems
+      },
+    },
     resolve: {
       preserveSymlinks: true,
       alias: {

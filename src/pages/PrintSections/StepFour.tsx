@@ -222,11 +222,11 @@ const StepFour = ({
   };
   return (
     <div className="step-content" data-step="4">
-   {/*    <h1>{t("print.stepFourTitle")}</h1>
-      <p>1* Visualiser les champsssss</p>
+      <h1>{t("print.stepFourTitle")}</h1>
+      <p>1* Visualiser les champs</p>
       <p>2* Séletionner nombre de check par page</p>
       <p className="mb-10">3* Génerer le pdf a imprimer </p>
- */}
+
       <Accordion title={t("button.visualPdf")}>
         <div style={{ marginBottom: "30px" }}>
           <div className="mb-12 flex items-center">
