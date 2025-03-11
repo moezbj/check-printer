@@ -1,0 +1,218 @@
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+/* Autocomplete Container */
+.autocomplete-container {
+  position: relative;
+  min-width: 220px;
+  max-width: 300px;
+  margin-right: 12px;
+}
+
+.autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #5008b3;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-list li {
+  padding: 10px;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.autocomplete-list li:hover {
+  background: #f0f0f0;
+  color: #5008b3;
+}
+
+.autocomplete-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.container-country {
+  display: flex;
+}
+
+.section {
+  display: block;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* Light border for rows */
+}
+
+th {
+  background: rgba(255, 255, 255, 0.1);
+  /* Header row background */
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+  /* Alternate row shading */
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  /* Highlight on hover */
+  cursor: pointer;
+}
+
+input,
+button {
+  padding: 10px;
+  width: 100%;
+  width: 220px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid  #fff;
+  color: #fff;
+  margin-right: 12px;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #fff;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  /* Reset lift effect on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+select {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+}
+
+select:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Delete Button Styling */
+.button-delete {
+  background: #e74c3c;
+  margin-left: 12px;
+  color: #fff;
+
+  /* Red delete button */
+}
+
+.button-delete:hover {
+  background: #c0392b;
+  color: #fff;
+  /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 15px;
+  }
+
+  input,
+  button,
+  select {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+th:first-child,
+td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+tr input[type="checkbox"]:checked + td {
+  background-color: #d11818;
+  /* Light gray background for selected rows */
+}
+
+.headers {
+  display: flex;
+}

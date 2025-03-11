@@ -1,0 +1,157 @@
+
+/* Style for the uploaded files container */
+#uploaded-files-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+#uploaded-files,
+#uploaded-pdf-files {
+  height: 300px;
+
+  overflow: scroll;
+}
+.file-list {
+  margin-bottom: 30px;
+}
+/* Style for the file item (each row) */
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for file items */
+.file-item:hover {
+  background-color: #f9f9f9;
+}
+.file-item:hover .file-name {
+  color: #333;
+}
+/* Style for the file name */
+.file-name {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-pdf-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for file items */
+.file-pdf-item:hover {
+  background-color: #f9f9f9;
+}
+.file-pdf-item:hover .file-pdf-name {
+  color: #333;
+}
+/* Style for the file name */
+.file-pdf-name {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #fff;
+  margin-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style for the delete button */
+.delete-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+  background-color: #c0392b;
+}
+/* Date filter styling */
+#dateFilter {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin: 20px 0px;
+  color: #333;
+}
+
+#dateFilter:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#datePdfFilter {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin: 20px 0px;
+  color: #333;
+}
+#datePdfFilter:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Label styling */
+label {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Container for date filter */
+.date-filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+select {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-right: 12px;
+}
+
+select:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+.file-list {
+  height: 400px;
+  overflow: scroll;
+}
